@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geminis Projects</title>
+    <title>Geminis Projects</title> <!-- TITULO DEL PROJECTO -->
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/--> 
     <link rel="stylesheet" href="css/inis.css"> 
@@ -35,7 +35,7 @@ https://www.tooplate.com/view/2124-vertex
         <span class="tm-brand-text geministitle">Geminis</span>        
     </h1>
 
-    <!-- Nav -->
+    <!-- Nav BAR-->
     <nav class="tm-nav">
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -151,27 +151,27 @@ https://www.tooplate.com/view/2124-vertex
                 <h2 class="tm-text-primary tm-text-right tm-gallery-header">Nuestro Equipo</h2> 
                 <div class="tm-gallery tm-mb-80">
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img/gallery/tn/img-01.jpg" alt="Image"/>
+                        <img src="img\photos_team\CAROL_MATEO_ANTONI.jpg" alt="Image"/>
                         <figcaption>
                             <h2>Antoni   Carol</h2>
                             <p>Mas información</p>
-                            <a href="img/gallery/img-01.jpg">View more</a>
+                            <a href="img\photos_team\CAROL_MATEO_ANTONI.jpg">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img/gallery/tn/img-02.jpg" alt="Image"/>
+                        <img src="img\photos_team\ALSINA_CALDERA_SERGI.jpg" alt="Image"/>
                         <figcaption>
                             <h2>Sergi   Alsina</h2>
                             <p>Mas información</p>
-                            <a href="img/gallery/img-02.jpg">View more</a>
+                            <a href="img\photos_team\ALSINA_CALDERA_SERGI.jpg">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img/gallery/tn/img-03.jpg" alt="Image"/>
+                        <img src="img\photos_team\SAGUÉS_JOSÉ_MARC.jpeg" alt="Image"/>
                         <figcaption>
                             <h2>Marc   Sagués</h2>
                             <p>Mas información</p>
-                            <a href="img/gallery/img-03.jpg">View more</a>
+                            <a href="img\photos_team\SAGUÉS_JOSÉ_MARC.jpeg">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
@@ -193,21 +193,31 @@ https://www.tooplate.com/view/2124-vertex
                 <p>
                     Para contactar con nosotros rellena los siguientes campos o bien utiliza otro de los canales de comunicación que disponemos.
                 </p> 
-                <form id="contact-form" action="" method="POST" class="tm-contact-form tm-mb-200">
+               
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control rounded-0" placeholder="Nombre" required />
+                        <input type="text" id="name" name="name" class="form-control rounded-0" placeholder="Nombre" required />
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" class="form-control rounded-0" placeholder="Correo" required />
+                        <input type="email" id="email" name="email" class="form-control rounded-0" placeholder="Correo" required />
                     </div>
                     <div class="form-group">
-                        <textarea rows="6" name="message" class="form-control rounded-0" placeholder="Mensaje" required=></textarea>
+                        <textarea rows="6" id="message" name="message" class="form-control rounded-0" placeholder="Mensaje" required=></textarea>
                     </div>
-
+                    
                     <div class="form-group tm-text-right">
-                        <button type="submit" class="tm-btn">Enviar</button>
+                        <button onclick="sendemail()" type="submit" class="tm-btn">Enviar
+                        </button>
+                        
                     </div>
-                </form>
+                    <div class="discord_contact">
+                        <a title="GEMINIS PROJECTS" href="https://discord.gg/YJH5QXbZvV"><img src="img\discord.png" alt="discord_icons" width="75" height="75"/></a>
+                        <div class="discord_contact_text">
+                            <p href="https://discord.gg/YJH5QXbZvV"> Unete a nuestro servidor de Discord </p>
+                        </div>
+                        
+                        
+                       </div>
+                
                 <footer class="tm-copyright tm-text-small">
                     Copyright 2021 Geminis Company 
                 </footer>              
@@ -218,12 +228,34 @@ https://www.tooplate.com/view/2124-vertex
             </div>
         </div> <!-- #contact -->
     </main>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+            (function() {
+            
 
+            })();
+        </script>
+        
     <script src="js/plugins.js"></script>
     <script>
+        emailjs.init("user_gyduzqABXjCbxIEE3cTiY");
         $(window).on("load", function() {
             $('body').addClass('loaded');
         });
+
+        /*PARA PODER ENVIAR EL CORREO A GEMINIS*/
+        function sendemail(){
+            let name = $("#name").val()
+            let email = $("#email").val()
+            let message = $("#message").val()
+
+            emailjs.send("Solicitud_Email", "template_qqnsez4",{
+               name: name,
+               email: email,
+               message: message 
+            }).then(function(res){location.reload()})
+            }
 
         $(function(){
             
@@ -272,28 +304,7 @@ https://www.tooplate.com/view/2124-vertex
             const totalPages = Math.ceil(galleryItems.length / itemsPerPage);
             const pageAttribute = 'data-page';
 
-            function setPagination(currentPage) {
-                for(let i = 1; i <= totalPages; i++) {
-                    var $pager = '';
-                    
-                    if(currentPage == i) {
-                        $pager = $('<a href="javascript:void(0);" class="active tm-paging-link" '+pageAttribute+'="'+i+'"></a>');
-                    } else {
-                        $pager = $('<a href="javascript:void(0);" class="tm-paging-link" '+pageAttribute+'="'+i+'"></a>');
-                    }
 
-                    $pager.html(i);
-
-                    $pager.click(function(){ 
-                        $('.tm-paging-link').removeClass("active");
-                        $(this).addClass('active');
-                        var page = $(this).eq(0).attr(pageAttribute);
-                        showItems(page);
-                    });
-
-                    $pager.appendTo($('.tm-paging'));
-                }
-            }
 
             function showItems(currentPage) {
                 for(let i = 0; i < galleryItems.length; i++) {
@@ -307,7 +318,7 @@ https://www.tooplate.com/view/2124-vertex
                 }
             }
 
-            setPagination(1);
+
             showItems(1);
 
             /****************** Magnific Popup ***********/
@@ -319,6 +330,9 @@ https://www.tooplate.com/view/2124-vertex
                     enabled: true
                 }
             });
+            
+
+
         });
     </script>
 </body>
