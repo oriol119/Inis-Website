@@ -7,6 +7,15 @@
     font-family:Georgia, 'Times New Roman', Times, serif !important;
     -webkit-text-stroke:0.03rem whitesmoke;
 }
+.tm-row_services{
+    margin: 5% ;
+    align-items: center;
+    display: flex;
+
+}
+.services_tecnology{
+    color: white;
+}
 .discord_contact{
 
     width: 120%;

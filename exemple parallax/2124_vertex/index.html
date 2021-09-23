@@ -109,35 +109,42 @@ https://www.tooplate.com/view/2124-vertex
                 <div class="tm-text-right">
                     <a href="#gallery" class="tm-btn tm-btn-next">Siguiente Página</a>
                 </div>                
-                <div class="tm-row">
+                <div class="tm-row_services">
                     <div class="tm-col">
-                        <div class="tm-text-center tm-my-50">
-                            <i class="fas fa-street-view fa-3x"></i>
-                        </div>                        
-                        <p>
-                            - React
-                            <br>
-                            - HTML5
-                            <br>
-                            - CSS3
-                            <br>
-                            - JavaScript
-                            <br>
-                            - SQL
-                            <br>
-                            - C#
-                            <br>
-                            
+                        <div class="services_lenguages_programming">
+                            <p>
+                                <a title="React" href="https://reactjs.org/"><img src="img\iconos\react.png" alt="react_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="HTML5" href="https://es.wikipedia.org/wiki/HTML5"><img src="img\iconos\html.png" alt="html_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="CSS" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada"><img src="img\iconos\css.png" alt="css_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="JavaScript" href="https://es.wikipedia.org/wiki/JavaScript"><img src="img\iconos\js.png" alt="js_icons" width="100" height="100" /></a>
+                                <br>
+                                SQL
+                                <br>
+                                C#
+                                <br>
+                                
 
-                        </p>
+                            </p>
+                        </div>
                     </div>
                     <div class="tm-col">
-                        <div class="tm-text-center tm-my-50">
-                            <i class="fas fa-bullseye fa-3x"></i>
-                        </div>                        
-                        <p>
-                            Nullam pellentesque accumsan hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
+                        <div class="services_tecnology">
+                            <p>
+                                <a title="MongoDB" href="https://www.mongodb.com/es"><img src="img\iconos\mongodb.png" alt="mongodb_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="Firebase" href="https://firebase.google.com/"><img src="img\iconos\firebase.png" alt="firebase_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="Unity3D" href="https://unity.com/"><img src="img\iconos\unity.png" alt="unity_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="Blockchain" href="https://www.blockchain.com/"><img src="img\iconos\Blockchain.png" alt="blockchain_icons" width="100" height="100" /></a>
+                                <br>
+                                <a title="Heroku" href="https://www.heroku.com/"><img src="img\iconos\heroku.png" alt="heroku_icons" width="100" height="100" /></a>
+                                <br>
+                            </p>
+                        </div>
                     </div>
                 </div>                
             </div>
@@ -210,7 +217,7 @@ https://www.tooplate.com/view/2124-vertex
                         
                     </div>
                     <div class="discord_contact">
-                        <a title="GEMINIS PROJECTS" href="https://discord.gg/YJH5QXbZvV"><img src="img\discord.png" alt="discord_icons" width="75" height="75"/></a>
+                        <a title="GEMINIS PROJECTS" href="https://discord.gg/YJH5QXbZvV"><img src="img\iconos\discord.png" alt="discord_icons" width="75" height="75"/></a>
                         <div class="discord_contact_text">
                             <p href="https://discord.gg/YJH5QXbZvV"> Unete a nuestro servidor de Discord </p>
                         </div>
@@ -238,11 +245,14 @@ https://www.tooplate.com/view/2124-vertex
         </script>
         
     <script src="js/plugins.js"></script>
+    <!-- ///////////// Para los iconos de ICONIFY /////////// -->
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
     <script>
         emailjs.init("user_gyduzqABXjCbxIEE3cTiY");
         $(window).on("load", function() {
             $('body').addClass('loaded');
         });
+
 
         /*PARA PODER ENVIAR EL CORREO A GEMINIS*/
         function sendemail(){
