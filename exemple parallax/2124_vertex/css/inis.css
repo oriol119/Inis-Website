@@ -25,7 +25,9 @@
 
    
 }
-
+.contactar_div{
+    margin-top: -7% !important;
+}
 .textodescripcion{
     text-align: justify;
 }
