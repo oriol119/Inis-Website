@@ -267,7 +267,7 @@ span, footer {  line-height: 1.8; }
     height: 240px;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0);
     color: #3f6fc8;
     display: flex;
     align-items: center;
