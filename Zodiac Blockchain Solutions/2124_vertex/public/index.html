@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2124-vertex
 
     <!-- Site logo -->
     <h1 class="tm-brand">
-        <img src="img\inisLogo.jpg" class="inislogo"/>
+        <img src="img\ZODIAC_LOGO.png" class="inislogo"/>
         <!-- <span class="tm-brand-text geministitle">Geminis</span>         -->
     </h1>
 
@@ -53,7 +53,7 @@ https://www.tooplate.com/view/2124-vertex
             </li>
             <li class="nav-item">
                 <a href="#gallery" class="nav-link">
-                    Equipo
+                    Proyectos
                 </a>
             </li>
             <li class="nav-item">
@@ -103,7 +103,7 @@ https://www.tooplate.com/view/2124-vertex
                 <p><strong>Zodiac</strong> ofrece diferentes servicios al cliente desde la creación de su sistema Web, la creación de aplicaciones móviles, aplicaciones de escritorio , diseño web e interfaces , desarrollo Front-End y Back-end , creación de NFT, integraciones y soluciones blockchain, Smart Contracts entre otros servicios. 
 
                 </p>
-                <p>Al fin y al cabo estamos dispuestos a escuchar cualquier propuesta con tal de poder valorarla y materializarla</p>
+                <p>Al fin y al cabo estamos dispuestos a escuchar cualquier propuesta con tal de poder valorarla y materializarla.</p>
 
                 
                 <div class="tm-text-right">
@@ -112,11 +112,11 @@ https://www.tooplate.com/view/2124-vertex
                 <div class="inis_services">
                     <div class="inis_services_item">
                         <img src="img\iconos\mobile-app.png" alt="react_icons" />
-                        <p>Desarrollo de aplicaciones Web y móbil</p>
+                        <p>Desarrollo fullStack de aplicaciones Web y móbil</p>
                     </div>
                     <div class="inis_services_item">
                         <img src="img\iconos\api.png" alt="react_icons" />
-                        <p>Servicios Web y Microservicios</p>
+                        <p>Servicios Web, Microservicios, Webscraping y APIs </p>
                     </div>
                     <div class="inis_services_item">
                         <img src="img\iconos\solution.png" alt="react_icons" />
@@ -124,11 +124,11 @@ https://www.tooplate.com/view/2124-vertex
                     </div>
                     <div class="inis_services_item">
                         <img src="img\iconos\coin.png" alt="react_icons" />
-                        <p>Creación de NFTs</p>
+                        <p>Consultoría, Asesoria y creación de NFTs</p>
                     </div>
                     <div class="inis_services_item">
                         <img src="img\iconos\blockchain2.png" alt="react_icons" />
-                        <p>Soluciones Blockchain</p>
+                        <p>Soluciones fullStack Blockchain</p>
                     </div>
                 </div>                
             </div>
@@ -139,38 +139,34 @@ https://www.tooplate.com/view/2124-vertex
 
         <div id="gallery" class="tm-content tm-content-small-top">
             <div class="tm-gallery-container">
-                <h2 class="tm-text-primary tm-text-right tm-gallery-header">Nuestro Equipo</h2> 
+                <h2 class="tm-text-primary tm-text-right tm-gallery-header">Proyectos</h2> 
                 <div class="tm-gallery tm-mb-80">
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img\photos_team\CAROL_MATEO_ANTONI.jpg" alt="Image"/>
+                        <img src="img\iconos\mobile-app.png" alt="Image"/>
                         <figcaption>
-                            <h2>Antoni   Carol</h2>
                             <p>Mas información</p>
-                            <a href="img\photos_team\CAROL_MATEO_ANTONI_B.jpg">View more</a>
+                            <a href="img\iconos\mobile-app.png">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img\photos_team\ALSINA_CALDERA_SERGI.jpg" alt="Image"/>
+                        <img src="img\iconos\api.png" alt="Image"/>
                         <figcaption>
-                            <h2>Sergi   Alsina</h2>
                             <p>Mas información</p>
-                            <a href="img\photos_team\ALSINA_CALDERA_SERGI_B.jpg">View more</a>
+                            <a href="img\iconos\api.png">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img\photos_team\SAGUÉS_JOSÉ_MARC.jpeg" alt="Image"/>
+                        <img src="img\iconos\coin.png" alt="Image"/>
                         <figcaption>
-                            <h2>Marc   Sagués</h2>
                             <p>Mas información</p>
-                            <a href="img\photos_team\SAGUÉS_JOSÉ_MARC_B.jpeg">View more</a>
+                            <a href="img\iconos\coin.png">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img\photos_team\VIVO_ORIOL.jpeg" alt="Image"/>
+                        <img src="img\iconos\blockchain2.png" alt="Image"/>
                         <figcaption>
-                            <h2>Oriol   Vivó</h2>
                             <p>Mas información</p>
-                            <a href="img\photos_team\VIVO_ORIOL.jpeg">View more</a>
+                            <a href="img\iconos\blockchain2.png">View more</a>
                         </figcaption>			
                     </figure>
                 </div>
@@ -331,5 +327,28 @@ https://www.tooplate.com/view/2124-vertex
 
         });
     </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAqDj-78w97FpDZskeg0n4tTtAjWBRlfG0",
+          authDomain: "zodiac-web.firebaseapp.com",
+          projectId: "zodiac-web",
+          storageBucket: "zodiac-web.appspot.com",
+          messagingSenderId: "161373297960",
+          appId: "1:161373297960:web:c91f6e24f783f7e8ae841d",
+          measurementId: "G-W93K5G92ND"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
