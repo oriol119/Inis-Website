@@ -190,14 +190,14 @@ span, footer {  line-height: 1.8; }
 }
 
 .tm-btn:hover {
-    color: #7faafa;
-    border-color: #3f6fc8;
+    color: rgb(226, 221, 221);
+    border-color: rgb(226, 221, 221);
 }
 
 .tm-text-small { font-size: 0.9em; }
 .tm-text-center { text-align: center; }
 .tm-text-right { text-align: right; }
-.tm-text-primary { color: #3f6fc8; }
+.tm-text-primary { color: rgb(226, 221, 221)}
 .tm-text-secondary { color: #9999CC; }
 .tm-text-link { color: #999; }
 .tm-text-link:hover { color: #3f6fc8; }
@@ -307,7 +307,7 @@ span, footer {  line-height: 1.8; }
 
 .nav-link:hover,
 .nav-link.current {
-    color: #3f6fc8;
+    color: rgb(226, 221, 221);;
 }
 
 /* Introduction */
@@ -432,7 +432,7 @@ span, footer {  line-height: 1.8; }
 /*-----------------*/
 
 figure.effect-goliath {
-	background: #3f6fc8;
+	background: rgb(226, 221, 221);
 }
 
 figure.effect-goliath img,
