@@ -24,6 +24,7 @@
   font-family: 'Merriweather', serif;
 }
 
+
 h1 {
   font-weight: 900;
   text-align: center;
@@ -38,12 +39,13 @@ h3 {
   height: 100%;
 }
 
+
 .flap::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 50%;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") #FFD500;
   background-position: 100px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -55,7 +57,7 @@ h3 {
   height: 100%;
   width: 50%;
   right: 0;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") #005BBB;
   background-position: -200px;
   background-repeat: no-repeat;
   transition: 1s;

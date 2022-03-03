@@ -113,6 +113,11 @@
 	letter-spacing: 1px;
 }
 
+.btn:hover{
+	padding: 14px 28px;
+
+}
+
 /* SOCIAL PANEL CSS */
 .social-panel-container {
 	position: fixed;
