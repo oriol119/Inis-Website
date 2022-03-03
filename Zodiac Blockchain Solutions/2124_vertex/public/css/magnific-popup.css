@@ -297,6 +297,21 @@
   .mfp-gallery .mfp-image-holder .mfp-figure {
     cursor: pointer; }
   
+
+  @media all and (max-width: 607px) {
+
+    .course-preview{
+      display:none ;
+      visibility: hidden;
+    }
+
+    .btn {
+      display:none ;
+      visibility: hidden;
+    }
+  }
+            
+
   @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
     /**
          * Remove all paddings around the image on small screen
@@ -349,3 +364,79 @@
     .mfp-container {
       padding-left: 6px;
       padding-right: 6px; } }
+
+
+@media all and (max-width: 992px) {
+
+  .h6{
+      
+    color: #7faafa;
+  }
+
+}
+
+
+@media all and (max-width: 1100px) {
+
+  #txt_1_2{
+    display: none;        
+  }
+  #txt_1_3{
+    display: none;
+         
+  }
+  #txt_1_4{
+    display: none;
+         
+  }
+
+  #txt_2_2{
+    display: none;
+         
+  }
+  #txt_2_3{
+    display: none;
+         
+  }
+  #txt_2_4{
+    display: none;
+         
+  }
+  #txt_2_5{
+    display: none;
+         
+  }
+  #txt_2_6{
+    display: none;
+         
+  }
+  #txt_3_2{
+    display: none;        
+  }
+  #txt_3_3{
+    display: none;
+         
+  }
+  #txt_3_4{
+    display: none;
+         
+  }
+  #txt_4_2{
+    display: none;
+         
+  }
+  #txt_4_3{
+    display: none;
+         
+  }
+  #txt_4_4{
+    display: none;
+         
+  }
+  #txt_4_5{
+    display: none;
+         
+  }
+
+
+}
