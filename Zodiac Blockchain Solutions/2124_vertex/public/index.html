@@ -147,11 +147,13 @@ https://www.tooplate.com/view/2124-vertex
                                 <img class="imageExample" src="img\iconos\mobile-app.png" alt="react_icons" />
                             </div>
                             <div class="course-info">
-                                <h2 class="titleh2">Desarrollo  de Aplicaciones</h2>
-                                <h6>WebApp</h6>
-                                <h6>App</h6>
-                                <h6>WordPress</h6>
-                                <button class="btn yellow " onclick="showDiv1()">Ver Proyectos</button>
+                                <h2 id="txt_1_1" class="titleh2">Desarrollo  de Aplicaciones</h2>
+                                <h6 id="txt_1_2">WebApp</h6>
+                                <h6 id="txt_1_3">App</h6>
+                                <h6 id="txt_1_4">WordPress</h6>
+
+                                <button id="btn_c1" class="btn yellow" onclick="showDiv1_()">Ver Proyectos</button>
+                                <button id="btn_c1_back" class="btn yellow" onclick="showDiv1_back()" style="display: none;">Volver</button>
                             </div>
                         </div>
                     </div>    
@@ -161,14 +163,15 @@ https://www.tooplate.com/view/2124-vertex
                                 <img class="imageExample" src="img\iconos\api.png" alt="react_icons" />
                             </div>
                             <div class="course-info">
-                                <h2 class="titleh2">Servicios web y microservicios</h2>
-                                <h6>APIs</h6>
-                                <h6>Bases de Datos</h6>
-                                <h6>Servidores Cloud</h6>
-                                <h6>Bots</h6>
-                                <h6>Webscraping</h6>
+                                <h2 id="txt_2_1" class="titleh2">Servicios web y microservicios</h2>
+                                <h6 id="txt_2_2" >APIs</h6>
+                                <h6 id="txt_2_3">Bases de Datos</h6>
+                                <h6 id="txt_2_4">Servidores Cloud</h6>
+                                <h6 id="txt_2_5">Bots</h6>
+                                <h6 id="txt_2_6">Webscraping</h6>
 
-                                <button class="btn blue" onclick="showDiv2()">Ver Proyectos</button>
+                                <button id="btn_c2" class="btn blue" onclick="showDiv2_()">Ver Proyectos</button>
+                                <button id="btn_c2_back" class="btn blue" onclick="showDiv2_back()" style="display: none;">Volver</button>
                             </div>
                         </div>
                     </div>  
@@ -178,26 +181,31 @@ https://www.tooplate.com/view/2124-vertex
                                 <img class="imageExample" src="img\iconos\coin.png" alt="react_icons" />
                             </div>
                             <div class="course-info">
-                                <h2 class="titleh2">Consultoría y asesoria de proyectos blockchain</h2>
-                                <h6>Analisis técnico</h6>
-                                <h6>Valoraciones y presupuestos</h6>
-                                <h6>Seguimiento de proyectos</h6>
-                                <button class="btn yellow" onclick="showDiv3()">Ver Proyectos</button>
+                                <h2 id="txt_3_1" class="titleh2">Consultoría y asesoria de proyectos blockchain</h2>
+                                <h6 id="txt_3_2">Analisis técnico</h6>
+                                <h6 id="txt_3_3">Valoraciones y presupuestos</h6>
+                                <h6 id="txt_3_4">Seguimiento de proyectos</h6>
+                                <button id="btn_c3" class="btn yellow" onclick="showDiv3_()">Ver Proyectos</button>
+                                <button id="btn_c3_back" class="btn yellow" onclick="showDiv3_back()" style="display: none;">Volver</button>
                             </div>
                         </div>
                     </div>  
                     <div class="courses-container">
-                        <div class="course">
+                        <div id ="hide_course4" class="course">
                             <div class="course-preview yellow">
                                 <img class="imageExample" src="img\iconos\blockchain2.png" alt="react_icons" />
                             </div>
                             <div class="course-info">
-                                <h2 class="titleh2">Soluciones  blockchain a medida</h2>
-                                <h6>Marketplace y NFTs</h6>
-                                <h6>Cryptomonedas y economía</h6>
-                                <h6>Aplicaciones descentralizadas</h6>
-                                <h6>Smartcontracts</h6>
-                                <button class="btn blue" onclick="showDiv4()">Ver Proyectos</button>
+                                <h2 id="txt_4_1" class="hideh">Soluciones  blockchain a medida</h2>
+                                <h6 id="txt_4_2" >Marketplace y NFTs</h6>
+                                <h6 id="txt_4_3">Cryptomonedas y economía</h6>
+                                <h6 id="txt_4_4">Aplicaciones descentralizadas</h6>
+                                <h6 id="txt_4_5">Smartcontracts</h6>
+                                <button id="btn_link4_1" class="btn_link" onclick="showDiv4_1()" style="display: none;">Plantillas Marketplace Flexibles (web3) </button>
+                                <button id="btn_link4_2" class="btn_link" onclick="showDiv4_2()" style="display: none;">Asesoría NFT Jon Secada</button>
+                                <button id="btn_c4" class="btn blue" onclick="showDiv4_()">Ver Proyectos</button>
+                                <button id="btn_c4_back" class="btn blue" onclick="showDiv4_back()" style="display: none;">Volver</button>
+
                             </div>
                         </div>
                     </div>  
@@ -258,12 +266,26 @@ https://www.tooplate.com/view/2124-vertex
             </div>          
             <div class="container" >
                 <div class="content" >
+                    <a href="https://d-olympus.store">
+                        <img  src="img\iconos\olympus.JPEG" width="100%" height="100%" >
+                    </a>
+                </div>
+          </div>
+        
+        </div>    
+
+        <div id="popup5" name="div" class="image popups" style="display: none;">  
+            <div class="outer">
+                <div class="inner">
+                  <label onclick="close5()" >Back</label>
+                </div>
+            </div>          
+            <div class="container" >
+                <div class="content" >
                     <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/82686566018477249648814160113347835732145604317164608136825039880175960981505">
                         <img  src="img\iconos\nft_ops.PNG" width="100%" height="100%">
                     </a>
-                    
                 </div>
-            <div class="flap" ></div>
           </div>
         
         </div>    
@@ -458,6 +480,10 @@ https://www.tooplate.com/view/2124-vertex
         function close4() {
             document.getElementById('popup4').style.display = "none";
         };
+        function close5() {
+            document.getElementById('popup5').style.display = "none";
+        };
+
         function showDiv1() {
             document.getElementById('popup1').style.display = "block";
             //document.body.style.backgroundColor = 'green';
@@ -471,29 +497,117 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('popup3').style.display = "block";
         };
 
-        function showDiv4() {
+        function showDiv4_1() {
             document.getElementById('popup4').style.display = "block";
         };
-
-        document.getElementById("figure1").onclick = displayDate;
-        function displayDate() {
-            window.open('https://distributies.com', '_blank');
+        function showDiv4_2() {
+            document.getElementById('popup5').style.display = "block";
         };
 
-        document.getElementById("figure2").onclick = displayDate2;
-        function displayDate2() {
-            window.open('https://welme.app', '_blank');
+        
+        function showDiv1_() {
+            document.getElementById('txt_1_1').innerHTML = "EJEMPLOS";
+            document.getElementById('txt_1_2').style.display = "none";
+            document.getElementById('txt_1_3').style.display = "none";
+            document.getElementById('txt_1_4').style.display = "none";
+            document.getElementById('btn_c1').style.display = "none";
+            document.getElementById('btn_c1_back').style.display = "block";
+            document.getElementById('btn_link1').style.display = "block";
+
+
         };
 
-        document.getElementById("figure3").onclick = displayDate3;
-        function displayDate3() {
-            window.open('https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/82686566018477249648814160113347835732145604317164608136825039880175960981505', '_blank');
+        function showDiv1_back() {
+            document.getElementById('txt_1_1').innerHTML = "Desarrollo de Aplicaciones";
+            document.getElementById('txt_1_2').style.display = "block";
+            document.getElementById('txt_1_3').style.display = "block";
+            document.getElementById('txt_1_4').style.display = "block";
+            document.getElementById('btn_c1').style.display = "block";
+            document.getElementById('btn_c1_back').style.display = "none";
+            document.getElementById('btn_link1').style.display = "none";
+
         };
 
-        document.getElementById("figure4").onclick = displayDate4;
-        function displayDate4() {
-            window.open('https://d-olympus.store', '_blank');
+        function showDiv2_() {
+            document.getElementById('txt_2_1').innerHTML = "EJEMPLOS";
+            document.getElementById('txt_2_2').style.display = "none";
+            document.getElementById('txt_2_3').style.display = "none";
+            document.getElementById('txt_2_4').style.display = "none";
+            document.getElementById('txt_2_5').style.display = "none";
+            document.getElementById('txt_2_6').style.display = "none";
+            document.getElementById('btn_c2').style.display = "none";
+            document.getElementById('btn_c2_back').style.display = "block";
+            document.getElementById('btn_link2').style.display = "block";
+
+
         };
+
+        function showDiv2_back() {
+            document.getElementById('txt_2_1').innerHTML = "Servicios Web y microservicios";
+            document.getElementById('txt_2_2').style.display = "block";
+            document.getElementById('txt_2_3').style.display = "block";
+            document.getElementById('txt_2_4').style.display = "block";
+            document.getElementById('txt_2_5').style.display = "block";
+            document.getElementById('txt_2_6').style.display = "block";
+            document.getElementById('btn_c2').style.display = "block";
+            document.getElementById('btn_c2_back').style.display = "none";
+            document.getElementById('btn_link2').style.display = "none";
+
+        };
+
+        function showDiv3_() {
+            document.getElementById('txt_3_1').innerHTML = "EJEMPLOS";
+            document.getElementById('txt_3_2').style.display = "none";
+            document.getElementById('txt_3_3').style.display = "none";
+            document.getElementById('txt_3_4').style.display = "none";
+            document.getElementById('btn_c3').style.display = "none";
+            document.getElementById('btn_c3_back').style.display = "block";
+            document.getElementById('btn_link3').style.display = "block";
+
+
+        };
+
+        function showDiv3_back() {
+            document.getElementById('txt_3_1').innerHTML = "Consultoría y asesoria de proyectos blockchain";
+            document.getElementById('txt_3_2').style.display = "block";
+            document.getElementById('txt_3_3').style.display = "block";
+            document.getElementById('txt_3_4').style.display = "block";
+            document.getElementById('btn_c3').style.display = "block";
+            document.getElementById('btn_c3_back').style.display = "none";
+            document.getElementById('btn_link3').style.display = "none";
+
+        };
+        
+        function showDiv4_() {
+            document.getElementById('txt_4_1').innerHTML = "EJEMPLOS";
+            document.getElementById('txt_4_2').style.display = "none";
+            document.getElementById('txt_4_3').style.display = "none";
+            document.getElementById('txt_4_4').style.display = "none";
+            document.getElementById('txt_4_5').style.display = "none";
+            document.getElementById('btn_c4').style.display = "none";
+            document.getElementById('btn_c4_back').style.display = "block";
+            document.getElementById('btn_link4_1').style.display = "block";
+            document.getElementById('btn_link4_2').style.display = "block";
+
+
+        };
+
+        function showDiv4_back() {
+            document.getElementById('txt_4_1').innerHTML = "Soluciones  blockchain a medida";
+            document.getElementById('txt_4_2').style.display = "block";
+            document.getElementById('txt_4_3').style.display = "block";
+            document.getElementById('txt_4_4').style.display = "block";
+            document.getElementById('txt_4_5').style.display = "block";
+            document.getElementById('btn_c4').style.display = "block";
+            document.getElementById('btn_c4_back').style.display = "none";
+            document.getElementById('btn_link4_1').style.display = "none";            
+            document.getElementById('btn_link4_2').style.display = "none";
+            
+
+
+        };
+
+
     </script>
 
 </body>
