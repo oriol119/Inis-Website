@@ -185,6 +185,7 @@ https://www.tooplate.com/view/2124-vertex
                                 <h6 id="txt_3_2">Analisis técnico</h6>
                                 <h6 id="txt_3_3">Valoraciones y presupuestos</h6>
                                 <h6 id="txt_3_4">Seguimiento de proyectos</h6>
+                                <button id="btn_link3_1" class="btn_link" onclick="showDiv3_1()" style="display: none;">Asesoría NFT Jon Secada</button>
                                 <h5 id="vm3" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c3" class="btn yellow" onclick="showDiv3_()">Ver Proyectos</button>
                                 <button id="btn_c3_back" class="btn yellow" onclick="showDiv3_back()" style="display: none;">Volver</button>
@@ -202,8 +203,9 @@ https://www.tooplate.com/view/2124-vertex
                                 <h6 id="txt_4_3">Cryptomonedas y economía</h6>
                                 <h6 id="txt_4_4">Aplicaciones descentralizadas</h6>
                                 <h6 id="txt_4_5">Smartcontracts</h6>
-                                <button id="btn_link4_1" class="btn_link" onclick="showDiv4_1()" style="display: none;">Plantillas Marketplace Flexibles (web3) </button>
-                                <button id="btn_link4_2" class="btn_link" onclick="showDiv4_2()" style="display: none;">Asesoría NFT Jon Secada</button>
+                                <button id="btn_link4_1" class="btn_link" onclick="showDiv4_1()" style="display: none;">Ejemplo Plantilla Marketplace v.0 </button>
+                                <button id="btn_link4_3" class="btn_link" onclick="showDiv4_2()" style="display: none;">Ejemplo Plantilla Marketplace v.0 </button>
+                                <button id="btn_link4_2" class="btn_link" onclick="showDiv4_3()" style="display: none;">Ejemplo Plantilla Marketplace v.0</button>
                                 <h5 onclick="mediaResp()" id="vm4" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c4" class="btn blue" onclick="showDiv4_()">Ver Proyectos</button>
                                 <button id="btn_c4_back" class="btn blue" onclick="showDiv4_back()" style="display: none;">Volver</button>
@@ -292,7 +294,22 @@ https://www.tooplate.com/view/2124-vertex
         
         </div>    
 
-
+        <div id="popup6" name="div" class="image popups" style="display: none;">  
+            <div class="outer">
+                <div class="inner">
+                  <label onclick="close6()" >Back</label>
+                </div>
+            </div>          
+            <div class="container" >
+                <div class="content" >
+                    <a href="https://d-animals-bsc.web.app/">
+                        <img  src="img\iconos\nft_ops.PNG" width="100%" height="100%">
+                    </a>
+                </div>
+          </div>
+        
+        </div>    
+        
         <div id="contact" class="tm-section">
             <!-- Contact left -->
             <div class="tm-section-col tm-content tm-content-small contactar_div">
@@ -487,6 +504,9 @@ https://www.tooplate.com/view/2124-vertex
         function close5() {
             document.getElementById('popup5').style.display = "none";
         };
+        function close6() {
+            document.getElementById('popup6').style.display = "none";
+        };
 
         function showDiv1() {
             document.getElementById('popup1').style.display = "block";
@@ -505,8 +525,12 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('popup4').style.display = "block";
         };
         function showDiv4_2() {
-            document.getElementById('popup5').style.display = "block";
+            document.getElementById('popup6').style.display = "block";
         };
+        function showDiv4_3() {
+            document.getElementById('popup7').style.display = "block";
+        };
+
 
         
         function showDiv1_() {
@@ -591,7 +615,8 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('btn_c4').style.display = "none";
             document.getElementById('btn_c4_back').style.display = "block";
             document.getElementById('btn_link4_1').style.display = "block";
-            document.getElementById('btn_link4_2').style.display = "block";
+            document.getElementById('btn_link4_3').style.display = "block";
+
             
             
         };
@@ -605,7 +630,8 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('btn_c4').style.display = "block";
             document.getElementById('btn_c4_back').style.display = "none";
             document.getElementById('btn_link4_1').style.display = "none";            
-            document.getElementById('btn_link4_2').style.display = "none";
+            document.getElementById('btn_link4_3').style.display = "none";
+
             
         };
 
@@ -619,9 +645,8 @@ https://www.tooplate.com/view/2124-vertex
                 document.getElementById('btn_c4').style.display = "block";
                 document.getElementById('btn_c4_back').style.display = "none";
                 document.getElementById('btn_link4_1').style.display = "none";            
-                document.getElementById('btn_link4_2').style.display = "none";
-                document.getElementById('btn_link4_2').style.marginBottom = "70px";
-                
+                document.getElementById('btn_link4_3').style.display = "none";
+                document.getElementById('btn_link4_3').style.marginBottom = "70px";
                 var mediaqueryList = window.matchMedia("(max-width: 600px)");
 
                 if(mediaqueryList.matches) {
@@ -646,8 +671,8 @@ https://www.tooplate.com/view/2124-vertex
                 document.getElementById('btn_c4').style.display = "none";
                 document.getElementById('btn_c4_back').style.display = "block";
                 document.getElementById('btn_link4_1').style.display = "block";
-                document.getElementById('btn_link4_2').style.display = "block";
-                document.getElementById('btn_link4_2').style.marginBottom = "10px";
+                document.getElementById('btn_link4_3').style.display = "block";
+                document.getElementById('btn_link4_3').style.marginBottom = "10px";
                 document.getElementById('txt_4_2').style.display = "none";
                 document.getElementById('txt_4_3').style.display = "none";
                 document.getElementById('txt_4_4').style.display = "none";
