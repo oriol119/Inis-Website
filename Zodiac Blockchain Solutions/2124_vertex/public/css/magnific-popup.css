@@ -318,6 +318,16 @@
     .titleh2 {
       color: white;
     }
+
+    .media_blue {
+      background-color: #005BBB;
+      color: #005BBB;
+    }
+
+    .media_yellow {
+      background-color: #FFD500;
+      color: #FFD500;
+    }
   }
             
 
