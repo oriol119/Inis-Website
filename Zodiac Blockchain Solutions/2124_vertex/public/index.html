@@ -148,11 +148,10 @@ https://www.tooplate.com/view/2124-vertex
                             </div>
                             <div class="course-info media_blue " >
                                 <h2 id="txt_1_1" class="titleh2">Desarrollo  de Aplicaciones</h2>
-                                <h5 style="display: none;" >Ver más</h5>
                                 <h6 id="txt_1_2">WebApp</h6>
                                 <h6 id="txt_1_3">App</h6>
                                 <h6 id="txt_1_4">WordPress</h6>
-
+                                <h5 id="vm1" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c1" class="btn yellow" onclick="showDiv1_()">Ver Proyectos</button>
                                 <button id="btn_c1_back" class="btn yellow" onclick="showDiv1_back()" style="display: none;">Volver</button>
                             </div>
@@ -170,7 +169,7 @@ https://www.tooplate.com/view/2124-vertex
                                 <h6 id="txt_2_4">Servidores Cloud</h6>
                                 <h6 id="txt_2_5">Bots</h6>
                                 <h6 id="txt_2_6">Webscraping</h6>
-
+                                <h5 id="vm2" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c2" class="btn blue" onclick="showDiv2_()">Ver Proyectos</button>
                                 <button id="btn_c2_back" class="btn blue" onclick="showDiv2_back()" style="display: none;">Volver</button>
                             </div>
@@ -186,6 +185,7 @@ https://www.tooplate.com/view/2124-vertex
                                 <h6 id="txt_3_2">Analisis técnico</h6>
                                 <h6 id="txt_3_3">Valoraciones y presupuestos</h6>
                                 <h6 id="txt_3_4">Seguimiento de proyectos</h6>
+                                <h5 id="vm3" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c3" class="btn yellow" onclick="showDiv3_()">Ver Proyectos</button>
                                 <button id="btn_c3_back" class="btn yellow" onclick="showDiv3_back()" style="display: none;">Volver</button>
                             </div>
@@ -204,6 +204,7 @@ https://www.tooplate.com/view/2124-vertex
                                 <h6 id="txt_4_5">Smartcontracts</h6>
                                 <button id="btn_link4_1" class="btn_link" onclick="showDiv4_1()" style="display: none;">Plantillas Marketplace Flexibles (web3) </button>
                                 <button id="btn_link4_2" class="btn_link" onclick="showDiv4_2()" style="display: none;">Asesoría NFT Jon Secada</button>
+                                <h5 onclick="mediaResp()" id="vm4" class = "verMas"  >Ver más</h5>
                                 <button id="btn_c4" class="btn blue" onclick="showDiv4_()">Ver Proyectos</button>
                                 <button id="btn_c4_back" class="btn blue" onclick="showDiv4_back()" style="display: none;">Volver</button>
 
@@ -469,6 +470,8 @@ https://www.tooplate.com/view/2124-vertex
     </script>
 
     <script>
+        
+
         function close1() {
             document.getElementById('popup1').style.display = "none";
         };
@@ -508,9 +511,9 @@ https://www.tooplate.com/view/2124-vertex
         
         function showDiv1_() {
             document.getElementById('txt_1_1').innerHTML = "EJEMPLOS";
-            document.getElementById('txt_1_2').style.display = "none";
-            document.getElementById('txt_1_3').style.display = "none";
-            document.getElementById('txt_1_4').style.display = "none";
+            document.getElementById('txt_1_2').style.color = "black";
+            document.getElementById('txt_1_3').style.display = "black";
+            document.getElementById('txt_1_4').style.display = "black";
             document.getElementById('btn_c1').style.display = "none";
             document.getElementById('btn_c1_back').style.display = "block";
             document.getElementById('btn_link1').style.display = "block";
@@ -520,9 +523,9 @@ https://www.tooplate.com/view/2124-vertex
 
         function showDiv1_back() {
             document.getElementById('txt_1_1').innerHTML = "Desarrollo de Aplicaciones";
-            document.getElementById('txt_1_2').style.display = "block";
-            document.getElementById('txt_1_3').style.display = "block";
-            document.getElementById('txt_1_4').style.display = "block";
+            document.getElementById('txt_1_2').style.color = "black";
+            document.getElementById('txt_1_3').style.display = "black";
+            document.getElementById('txt_1_4').style.display = "black";
             document.getElementById('btn_c1').style.display = "block";
             document.getElementById('btn_c1_back').style.display = "none";
             document.getElementById('btn_link1').style.display = "none";
@@ -589,12 +592,12 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('btn_c4_back').style.display = "block";
             document.getElementById('btn_link4_1').style.display = "block";
             document.getElementById('btn_link4_2').style.display = "block";
-
-
+            
+            
         };
 
         function showDiv4_back() {
-            document.getElementById('txt_4_1').innerHTML = "Soluciones  blockchain a medida";
+            
             document.getElementById('txt_4_2').style.display = "block";
             document.getElementById('txt_4_3').style.display = "block";
             document.getElementById('txt_4_4').style.display = "block";
@@ -604,10 +607,55 @@ https://www.tooplate.com/view/2124-vertex
             document.getElementById('btn_link4_1').style.display = "none";            
             document.getElementById('btn_link4_2').style.display = "none";
             
-
-
         };
 
+        function mediaResp() {
+
+            if (document.getElementById('vm4').innerHTML == "Ver menos"){
+                
+                document.getElementById('vm4').innerHTML = "Ver mas";
+                document.getElementById('txt_4_1').innerHTML = "Soluciones  blockchain a medida";
+                document.getElementById('btn_c4').style.display = "none";
+                document.getElementById('btn_c4').style.display = "block";
+                document.getElementById('btn_c4_back').style.display = "none";
+                document.getElementById('btn_link4_1').style.display = "none";            
+                document.getElementById('btn_link4_2').style.display = "none";
+                document.getElementById('btn_link4_2').style.marginBottom = "70px";
+                
+                var mediaqueryList = window.matchMedia("(max-width: 600px)");
+
+                if(mediaqueryList.matches) {
+                    document.getElementById('txt_4_2').style.display = "none";
+                    document.getElementById('txt_4_3').style.display = "none";
+                    document.getElementById('txt_4_4').style.display = "none";
+                    document.getElementById('txt_4_5').style.display = "none";
+                } else {
+                    document.getElementById('txt_4_2').style.display = "block";
+                    document.getElementById('txt_4_3').style.display = "block";
+                    document.getElementById('txt_4_4').style.display = "block";
+                    document.getElementById('txt_4_5').style.display = "block";
+                }
+
+  
+
+            }
+            else{
+                document.getElementById('txt_4_1').innerHTML = "Ejemplos";
+                
+                document.getElementById('vm4').innerHTML = "Ver menos";
+                document.getElementById('btn_c4').style.display = "none";
+                document.getElementById('btn_c4_back').style.display = "block";
+                document.getElementById('btn_link4_1').style.display = "block";
+                document.getElementById('btn_link4_2').style.display = "block";
+                document.getElementById('btn_link4_2').style.marginBottom = "10px";
+                document.getElementById('txt_4_2').style.display = "none";
+                document.getElementById('txt_4_3').style.display = "none";
+                document.getElementById('txt_4_4').style.display = "none";
+                document.getElementById('txt_4_5').style.display = "none";
+
+                
+                };
+            };
 
     </script>
 

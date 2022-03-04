@@ -1,3 +1,7 @@
+.verMas{
+  display: none;
+}
+
 /* Magnific Popup CSS */
 .mfp-bg {
     top: 0;
@@ -297,23 +301,43 @@
   .mfp-gallery .mfp-image-holder .mfp-figure {
     cursor: pointer; }
   
+    
 
   @media all and (max-width: 607px) {
 
-    .course-preview{
-      display:none ;
+    #txt_4_2{
+      display: none;
+      visibility: hidden;
+    }
+    #txt_4_3{
+      display: none;
+      visibility: hidden;
+    }
+    #txt_4_4{
+      display: none;
+      visibility: hidden;
+    }
+    #txt_4_5{
+      display: none;
       visibility: hidden;
     }
 
-    .btn {
+    .course-preview{
+
       display:none ;
       visibility: hidden;
     }
 
     .course-info {
-    	background-color: rgb(121, 116, 116);
+    	color: #F3F3F3;
 
     }
+
+    h6 {
+      display: none;
+      visibility: hidden;
+    }
+
 
     .titleh2 {
       color: white;
@@ -321,13 +345,60 @@
 
     .media_blue {
       background-color: #005BBB;
-      color: #005BBB;
+      
     }
 
     .media_yellow {
       background-color: #FFD500;
-      color: #FFD500;
     }
+
+    #vm1{
+      display: block;
+      font-size: 15px;
+      color: #F3F3F3;
+    }
+
+    #vm2{
+      display: block;
+      font-size: 15px;
+      color: #F3F3F3;
+    }
+
+    #vm3{
+      display: block;
+      font-size: 15px;
+      color: #F3F3F3;
+    }
+    
+    #vm4{
+      display: block;
+      font-size: 15px;
+      color: #F3F3F3;
+    }
+
+    #btn_link4_2 {
+      margin-bottom: 10px; 
+    }
+
+    #txt_4_2 {
+      display: none;
+      visibility: hidden;
+    } 
+    #txt_4_3 {
+      display: none;
+      visibility: hidden;
+
+    } 
+    #txt_4_4 {
+      display: none;
+      visibility: hidden;
+
+    } 
+    #txt_4_5 {
+      display: none;
+      visibility: hidden;
+
+    } 
   }
             
 
@@ -399,64 +470,14 @@
 
 @media all and (max-width: 1100px) {
 
-  #txt_1_2{
-    display: none;        
-  }
-  #txt_1_3{
+  .btn {
     display: none;
-         
-  }
-  #txt_1_4{
-    display: none;
-         
+    visibility: hidden;
+          
   }
 
-  #txt_2_2{
-    display: none;
-         
-  }
-  #txt_2_3{
-    display: none;
-         
-  }
-  #txt_2_4{
-    display: none;
-         
-  }
-  #txt_2_5{
-    display: none;
-         
-  }
-  #txt_2_6{
-    display: none;
-         
-  }
-  #txt_3_2{
-    display: none;        
-  }
-  #txt_3_3{
-    display: none;
-         
-  }
-  #txt_3_4{
-    display: none;
-         
-  }
-  #txt_4_2{
-    display: none;
-         
-  }
-  #txt_4_3{
-    display: none;
-         
-  }
-  #txt_4_4{
-    display: none;
-         
-  }
-  #txt_4_5{
-    display: none;
-         
+  .verMas {
+    display: block;
   }
  
 }
